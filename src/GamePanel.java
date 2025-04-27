@@ -9,11 +9,14 @@ public class GamePanel extends JPanel implements KeyListener {
     private int screenWidth;
     private int screenHeight;
     private int direction=0;
+    private Timer timer;
+
 
     public GamePanel() {
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.setLayout(null);
+        this.addKeyListener(this);
 
         // chat gpt
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -27,6 +30,12 @@ public class GamePanel extends JPanel implements KeyListener {
         int paddleY = screenHeight / 2 - paddleHeight / 2;
 
         player = new Paddle(paddleX, paddleY, paddleWidth, paddleHeight);
+
+        timer = new Timer(10, e -> {
+            update();
+            repaint();
+        });
+        timer.start();
     }
 //chat gpt
 
