@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani timer ktery kazdych 10 milisekund spusti metodu repaint a update a diky tomu se palka hybe">
-      <change afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744894991908</updated>
       <workItem from="1744894993045" duration="5853000" />
-      <workItem from="1745750130015" duration="3440000" />
+      <workItem from="1745750130015" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -112,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745755490868</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat">
+      <option name="closed" value="true" />
+      <created>1745756516142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745756516142</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +133,7 @@
     <MESSAGE value="vytvoreni tridu Paddle.java kde vytvarime palku podle veliksoti obrazovky a metody k pohybu" />
     <MESSAGE value="implementace KeyListener a metod diky kterym muzeme pohybovat palkou pomoci W a S take pridani promene direction ktera bude udavat smer pokud 1 tak dolu a -1 nahoru 0 stoji a metoda update ktera aktualizuje jestli se palka vykresluje nahiru nebo dolu" />
     <MESSAGE value="pridani timer ktery kazdych 10 milisekund spusti metodu repaint a update a diky tomu se palka hybe" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani timer ktery kazdych 10 milisekund spusti metodu repaint a update a diky tomu se palka hybe" />
+    <MESSAGE value="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat" />
+    <option name="LAST_COMMIT_MESSAGE" value="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat" />
   </component>
 </project>

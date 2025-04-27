@@ -5,6 +5,7 @@ import java.awt.event.KeyListener;
 
 public class GamePanel extends JPanel implements KeyListener {
     private Paddle player;
+    private Ball ball;
 
     private int screenWidth;
     private int screenHeight;
@@ -28,7 +29,6 @@ public class GamePanel extends JPanel implements KeyListener {
         int paddleHeight = screenHeight / 5;
         int paddleX = screenWidth / 30;
         int paddleY = screenHeight / 2 - paddleHeight / 2;
-
         player = new Paddle(paddleX, paddleY, paddleWidth, paddleHeight);
 
         timer = new Timer(10, e -> {
@@ -36,6 +36,10 @@ public class GamePanel extends JPanel implements KeyListener {
             repaint();
         });
         timer.start();
+        int ballSize = screenWidth / 70;
+        int ballX = screenWidth / 2 - ballSize / 2;
+        int ballY = screenHeight / 2 - ballSize / 2;
+        ball = new Ball(ballX, ballY, ballSize, ballSize);
     }
 //chat gpt
 
@@ -43,6 +47,7 @@ public class GamePanel extends JPanel implements KeyListener {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         player.draw(g);
+        ball.draw(g);
     }
 
     @Override
@@ -72,6 +77,7 @@ int key = e.getKeyCode();
         if (direction == 1) {
             player.moveDown(screenHeight);
         }
+        ball.move();
     }
     }
 
