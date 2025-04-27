@@ -1,11 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class GamePanel extends JPanel {
+public class GamePanel extends JPanel implements KeyListener {
     private Paddle player;
 
     private int screenWidth;
     private int screenHeight;
+    private int direction=0;
 
     public GamePanel() {
         this.setBackground(Color.BLACK);
@@ -32,4 +35,34 @@ public class GamePanel extends JPanel {
         super.paintComponent(g);
         player.draw(g);
     }
-}
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+int key = e.getKeyCode();
+        if (key == KeyEvent.VK_W) {
+            direction = -1;
+        }
+        if (key == KeyEvent.VK_S) {
+            direction = 1;
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
+    public void update(){
+        if (direction == -1) {
+            player.moveUp();
+        }
+        if (direction == 1) {
+            player.moveDown(screenHeight);
+        }
+    }
+    }
+
