@@ -27,7 +27,7 @@ public class GamePanel extends JPanel implements KeyListener {
 
         int paddleWidth = screenWidth / 60;
         int paddleHeight = screenHeight / 5;
-        int paddleX = screenWidth / 30;
+        int paddleX =screenWidth - screenWidth / 30 - paddleWidth;
         int paddleY = screenHeight / 2 - paddleHeight / 2;
         player = new Paddle(paddleX, paddleY, paddleWidth, paddleHeight);
 
@@ -78,6 +78,16 @@ int key = e.getKeyCode();
             player.moveDown(screenHeight);
         }
         ball.move();
+        if(ball.getY()<= 10 || ball.getY() + ball.getHeight() >= screenHeight){
+            ball.ReverseYDirection();
+        }
+        if (ball.getX() < player.getX() + player.getWidth() &&
+                ball.getX() + ball.getWidth() > player.getX() &&
+                ball.getY() < player.getY() + player.getHeight() &&
+                ball.getY() + ball.getHeight() > player.getY()) {
+
+            ball.ReverseXDirection();
+        }
     }
     }
 
