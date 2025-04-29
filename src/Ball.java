@@ -31,4 +31,31 @@ public void ReverseYDirection(){
         yVelocity=-yVelocity;
 }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getxVelocity() {
+        return xVelocity;
+    }
+
+    public int getyVelocity() {
+        return yVelocity;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
 }
