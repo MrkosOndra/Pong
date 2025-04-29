@@ -71,6 +71,7 @@ int key = e.getKeyCode();
 
     }
     public void update(){
+
         if (direction == -1) {
             player.moveUp();
         }
