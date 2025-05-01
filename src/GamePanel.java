@@ -6,6 +6,7 @@ import java.awt.event.KeyListener;
 public class GamePanel extends JPanel implements KeyListener {
     private Paddle player;
     private Ball ball;
+    private Paddle ai;
 
     private int screenWidth;
     private int screenHeight;
@@ -31,6 +32,10 @@ public class GamePanel extends JPanel implements KeyListener {
         int paddleY = screenHeight / 2 - paddleHeight / 2;
         player = new Paddle(paddleX, paddleY, paddleWidth, paddleHeight);
 
+        int aiX = screenWidth / 30;
+        int aiY = screenHeight / 2 - paddleHeight / 2;
+        ai = new Paddle(aiX, aiY, paddleWidth, paddleHeight);
+
         timer = new Timer(10, e -> {
             update();
             repaint();
@@ -48,6 +53,7 @@ public class GamePanel extends JPanel implements KeyListener {
         super.paintComponent(g);
         player.draw(g);
         ball.draw(g);
+        ai.draw(g);
     }
 
     @Override
@@ -86,6 +92,19 @@ int key = e.getKeyCode();
                 ball.getX() + ball.getWidth() > player.getX() &&
                 ball.getY() < player.getY() + player.getHeight() &&
                 ball.getY() + ball.getHeight() > player.getY()) {
+
+            ball.ReverseXDirection();
+        }
+        if (ball.getY() < ai.getY()) {
+            ai.moveUp();
+        }
+        if (ball.getY() > ai.getY() + ai.getHeight()) {
+            ai.moveDown(screenHeight);
+        }
+        if (ball.getX() < ai.getX() + ai.getWidth() &&
+                ball.getX() + ball.getWidth() > ai.getX() &&
+                ball.getY() < ai.getY() + ai.getHeight() &&
+                ball.getY() + ball.getHeight() > ai.getY()) {
 
             ball.ReverseXDirection();
         }
