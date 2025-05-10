@@ -6,6 +6,7 @@ public class Ball {
     private int width, height;
     private int xVelocity, yVelocity;
     private int speed = 5;
+    private int maxSpeed=15;
 
     public Ball(int x, int y, int width, int height) {
         this.x = x;
@@ -33,13 +34,30 @@ public void ReverseYDirection(){
 public void reset(int screenWidth , int screenHeight , boolean TowardsPlayer){
         x=screenWidth / 2 - width / 2;
         y=screenWidth / 2 - height / 2;
+    resetSpeed();
         if(TowardsPlayer){
             xVelocity= -speed;
         }else{
             xVelocity = speed;
         }
+    yVelocity = (Math.random() < 0.5) ? speed : -speed;
 }
+    public void increaseSpeed() {
+        if (xVelocity > 0 && xVelocity < maxSpeed) {
+            xVelocity = xVelocity + 1;
+        } else if (xVelocity < 0 && xVelocity > -maxSpeed) {
+            xVelocity = xVelocity - 1;
+        }
 
+        if (yVelocity > 0 && yVelocity < maxSpeed) {
+            yVelocity = yVelocity + 1;
+        } else if (yVelocity < 0 && yVelocity > -maxSpeed) {
+            yVelocity = yVelocity - 1;
+        }
+    }
+public void resetSpeed(){
+        speed=5;
+}
     public int getX() {
         return x;
     }
