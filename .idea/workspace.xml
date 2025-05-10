@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky">
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani metod pohybu pro Ai palku aby hrac mohl jednoduseji vstrelit gol metoda palku vzdy posune na opacnou stranu nez ma jet o 3 pixely">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,9 @@
       <workItem from="1744894993045" duration="5853000" />
       <workItem from="1745750130015" duration="4828000" />
       <workItem from="1745950915443" duration="3285000" />
-      <workItem from="1746123560041" duration="1039000" />
+      <workItem from="1746123560041" duration="1136000" />
+      <workItem from="1746713330055" duration="1160000" />
+      <workItem from="1746906510721" duration="5624000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -162,7 +166,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745953970725</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky">
+      <option name="closed" value="true" />
+      <created>1746125636023</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1746125636024</updated>
+    </task>
+    <task id="LOCAL-00014" summary="pridani metody reset aby se micek mohl resetovat po golu">
+      <option name="closed" value="true" />
+      <created>1746908217589</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1746908217589</updated>
+    </task>
+    <task id="LOCAL-00015" summary="pridani metod pohybu pro Ai palku aby hrac mohl jednoduseji vstrelit gol metoda palku vzdy posune na opacnou stranu nez ma jet o 3 pixely">
+      <option name="closed" value="true" />
+      <created>1746909603811</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746909603811</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +209,8 @@
     <MESSAGE value="ve tride update udelani odrazu micku od hran a hracovi palky" />
     <MESSAGE value="v metode update udelani odrazu micku od hran a hracovi palky" />
     <MESSAGE value="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky" />
-    <option name="LAST_COMMIT_MESSAGE" value="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky" />
+    <MESSAGE value="pridani metody reset aby se micek mohl resetovat po golu" />
+    <MESSAGE value="pridani metod pohybu pro Ai palku aby hrac mohl jednoduseji vstrelit gol metoda palku vzdy posune na opacnou stranu nez ma jet o 3 pixely" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridani metod pohybu pro Ai palku aby hrac mohl jednoduseji vstrelit gol metoda palku vzdy posune na opacnou stranu nez ma jet o 3 pixely" />
   </component>
 </project>

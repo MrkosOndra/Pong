@@ -27,14 +27,14 @@ public class Paddle {
         }
     }
 public void moveUpAi(){
-        y=y-3;
+        y=y-10;
         if(y<0){
             y=0;
         }
 }
 public void moveDownAI(int panelHeight) {
         if (y + height < panelHeight) {
-            y = y + 3;
+            y = y + 10;
         }
     }
 
