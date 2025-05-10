@@ -26,7 +26,17 @@ public class Paddle {
             y += speed;
         }
     }
-
+public void moveUpAi(){
+        y=y-3;
+        if(y<0){
+            y=0;
+        }
+}
+public void moveDownAI(int panelHeight) {
+        if (y + height < panelHeight) {
+            y = y + 3;
+        }
+    }
 
     public int getX() { return x; }
     public int getY() { return y; }
