@@ -30,6 +30,15 @@ xVelocity=-xVelocity;
 public void ReverseYDirection(){
         yVelocity=-yVelocity;
 }
+public void reset(int screenWidth , int screenHeight , boolean TowardsPlayer){
+        x=screenWidth / 2 - width / 2;
+        y=screenWidth / 2 - height / 2;
+        if(TowardsPlayer){
+            xVelocity= -speed;
+        }else{
+            xVelocity = speed;
+        }
+}
 
     public int getX() {
         return x;
