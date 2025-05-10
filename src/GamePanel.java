@@ -7,6 +7,7 @@ public class GamePanel extends JPanel implements KeyListener {
     private Paddle player;
     private Ball ball;
     private Paddle ai;
+    private ScoreBoard scoreBoard;
 
     private int screenWidth;
     private int screenHeight;
@@ -51,6 +52,7 @@ public class GamePanel extends JPanel implements KeyListener {
             ball.increaseSpeed();
         });
         speedTimer.start();
+        scoreBoard=new ScoreBoard();
     }
 
     @Override
@@ -59,6 +61,7 @@ public class GamePanel extends JPanel implements KeyListener {
         player.draw(g);
         ball.draw(g);
         ai.draw(g);
+        scoreBoard.draw(g,screenWidth);
     }
 
     @Override
@@ -117,12 +120,13 @@ int key = e.getKeyCode();
         if(ball.getX() + ball.getWidth()<0){
             ball.reset(screenWidth,screenHeight,true);
             speedTimer.restart();
+            scoreBoard.addPointPlayer();
 
         }
         if(ball.getX()>screenWidth){
             ball.reset(screenWidth,screenHeight,false);
             speedTimer.restart();
-
+            scoreBoard.addPointAi();
         }
     }
     }
