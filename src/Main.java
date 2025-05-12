@@ -3,13 +3,22 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         JFrame window=new JFrame("Pong Game");
-        GamePanel GamePanel = new GamePanel();
-
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setResizable(false);
-        window.add(GamePanel);
         window.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        window.setUndecorated(false);
+
+        ModePanel menu = new ModePanel(null);
+        menu.getStartButton().addActionListener(e -> {
+           int winscore= menu.getWinscore();
+            boolean twoPlayers = menu.isTwoPlayers();
+
+            GamePanel game = new GamePanel(winscore,twoPlayers);
+            window.setContentPane(game);
+            window.revalidate();
+            game.requestFocusInWindow();
+        });
+        window.setContentPane(menu);
         window.setVisible(true);
+
+        }
+
     }
-}
