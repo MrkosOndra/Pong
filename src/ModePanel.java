@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 public class ModePanel extends JPanel {
     private int winscore=0;
     private boolean twoPlayers;
+    private JButton startButton;
 
     public ModePanel(ActionListener startListener) {
         setLayout(new GridLayout(6, 1));
@@ -49,11 +50,11 @@ public class ModePanel extends JPanel {
         scoreButtons.add(button3);
         scoreButtons.add(button5);
         scoreButtons.add(button10);
+        scoreButtons.add(button15);
         add(scoreButtons);
 
-        JButton start = new JButton("Spustit hru");
-        start.addActionListener(startListener);
-        add(start);
+        startButton=new JButton("Spustit hru");
+        add(startButton);
     }
 
     public int getWinscore() {
@@ -62,5 +63,9 @@ public class ModePanel extends JPanel {
 
     public boolean isTwoPlayers() {
         return twoPlayers;
+    }
+
+    public JButton getStartButton() {
+        return startButton;
     }
 }
