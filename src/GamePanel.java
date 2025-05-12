@@ -16,7 +16,7 @@ public class GamePanel extends JPanel implements KeyListener {
     private Timer speedTimer;
 
 
-    public GamePanel() {
+    public GamePanel(int winscore , boolean twoPlayers) {
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.setLayout(null);
