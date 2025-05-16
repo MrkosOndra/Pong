@@ -12,11 +12,14 @@ public class GamePanel extends JPanel implements KeyListener {
     private int screenWidth;
     private int screenHeight;
     private int direction=0;
+    private int winscore;
     private Timer timer;
     private Timer speedTimer;
+    private boolean gameover =false;
 
 
     public GamePanel(int winscore , boolean twoPlayers) {
+        this.winscore=winscore;
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.setLayout(null);
@@ -53,6 +56,8 @@ public class GamePanel extends JPanel implements KeyListener {
         });
         speedTimer.start();
         scoreBoard=new ScoreBoard();
+
+        ball.reset(screenWidth, screenHeight, true);
     }
 
     @Override
@@ -62,6 +67,20 @@ public class GamePanel extends JPanel implements KeyListener {
         ball.draw(g);
         ai.draw(g);
         scoreBoard.draw(g,screenWidth);
+        if (gameover) {
+            g.setColor(Color.RED);
+            g.setFont(new Font("Arial", Font.BOLD, 64));
+
+            String winner;
+            if (scoreBoard.getPlayerScore() >= winscore) {
+                winner = "VYHRÁL HRÁČ!";
+            } else {
+                winner = "VYHRÁLA AI!";
+            }
+
+            int textWidth = g.getFontMetrics().stringWidth(winner);
+            g.drawString(winner, (screenWidth - textWidth) / 2, screenHeight / 2);
+        }
     }
 
     @Override
@@ -85,6 +104,7 @@ int key = e.getKeyCode();
 
     }
     public void update(){
+        if(gameover)return;
 
         if (direction == -1) {
             player.moveUp();
@@ -118,15 +138,28 @@ int key = e.getKeyCode();
             ball.ReverseXDirection();
         }
         if(ball.getX() + ball.getWidth()<0){
-            ball.reset(screenWidth,screenHeight,true);
-            speedTimer.restart();
             scoreBoard.addPointPlayer();
+            if(scoreBoard.getPlayerScore()>=winscore){
+                gameover=true;
+                timer.stop();
+                speedTimer.stop();
+            }else{
+                ball.reset(screenWidth,screenHeight,false);
+                speedTimer.restart();
+            }
 
         }
-        if(ball.getX()>screenWidth){
-            ball.reset(screenWidth,screenHeight,false);
-            speedTimer.restart();
+        if(ball.getX()>screenWidth) {
             scoreBoard.addPointAi();
+
+            if (scoreBoard.getAiScore() >= winscore) {
+                gameover = true;
+                timer.stop();
+                speedTimer.stop();
+            } else {
+                ball.reset(screenWidth, screenHeight, true);
+                speedTimer.restart();
+            }
         }
     }
     }
