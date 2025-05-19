@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani ukonceni hry po vstreleni poctu golu ktery si hrac na zacatku hry vybere">
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,8 @@
       <workItem from="1747062521814" duration="604000" />
       <workItem from="1747066756847" duration="3520000" />
       <workItem from="1747420458536" duration="5001000" />
-      <workItem from="1747563583659" duration="3691000" />
+      <workItem from="1747563583659" duration="5252000" />
+      <workItem from="1747676650011" duration="2770000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -272,7 +273,31 @@
       <option name="project" value="LOCAL" />
       <updated>1747427601592</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="predelani metody update do vice metod pro prehlednost kodu a priadni hry pro 2 hrace a vypisu kdzy vyhraje hrac2">
+      <option name="closed" value="true" />
+      <created>1747569060130</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1747569060131</updated>
+    </task>
+    <task id="LOCAL-00027" summary="pridani tridy GameOverOverlay.java ve ktere jsou Buttony pro hrani znovu a zpatky do menu a taky metoda pro ukazani ktera se vola po ukonceni hry v game panel v metode endgame">
+      <option name="closed" value="true" />
+      <created>1747679283418</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1747679283418</updated>
+    </task>
+    <task id="LOCAL-00028" summary="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru">
+      <option name="closed" value="true" />
+      <created>1747679417171</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1747679417171</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +305,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Zalozeni" />
     <MESSAGE value="vytvoreni okna a tridy GamePanel.java kde se bude vykreslovat hra" />
     <MESSAGE value="vytvoreni tridu Paddle.java kde vytvarime palku podle veliksoti obrazovky a metody k pohybu" />
     <MESSAGE value="implementace KeyListener a metod diky kterym muzeme pohybovat palkou pomoci W a S take pridani promene direction ktera bude udavat smer pokud 1 tak dolu a -1 nahoru 0 stoji a metoda update ktera aktualizuje jestli se palka vykresluje nahiru nebo dolu" />
@@ -303,6 +327,9 @@
     <MESSAGE value="pridani startButton jako promene" />
     <MESSAGE value="pridani zvyrazneni vybraneho modu a poctu do kolika hrac chce hrat" />
     <MESSAGE value="pridani ukonceni hry po vstreleni poctu golu ktery si hrac na zacatku hry vybere" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani ukonceni hry po vstreleni poctu golu ktery si hrac na zacatku hry vybere" />
+    <MESSAGE value="predelani metody update do vice metod pro prehlednost kodu a priadni hry pro 2 hrace a vypisu kdzy vyhraje hrac2" />
+    <MESSAGE value="pridani tridy GameOverOverlay.java ve ktere jsou Buttony pro hrani znovu a zpatky do menu a taky metoda pro ukazani ktera se vola po ukonceni hry v game panel v metode endgame" />
+    <MESSAGE value="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru" />
+    <option name="LAST_COMMIT_MESSAGE" value="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru" />
   </component>
 </project>

@@ -11,7 +11,7 @@ public class Main {
            int winscore= menu.getWinscore();
             boolean twoPlayers = menu.isTwoPlayers();
 
-            GamePanel game = new GamePanel(winscore,twoPlayers);
+            GamePanel game = new GamePanel(winscore,twoPlayers,window);
             window.setContentPane(game);
             window.revalidate();
             game.requestFocusInWindow();
