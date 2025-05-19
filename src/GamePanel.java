@@ -8,6 +8,8 @@ public class GamePanel extends JPanel implements KeyListener {
     private Ball ball;
     private Paddle ai;
     private ScoreBoard scoreBoard;
+    private GameOverOverlay gameOverOverlay;
+    JFrame parentFrame;
 
     private int screenWidth;
     private int screenHeight;
@@ -20,13 +22,14 @@ public class GamePanel extends JPanel implements KeyListener {
     private boolean twoPlayers;
 
 
-    public GamePanel(int winscore, boolean twoPlayers) {
+    public GamePanel(int winscore, boolean twoPlayers,JFrame frame) {
         this.winscore = winscore;
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.setLayout(null);
         this.addKeyListener(this);
         this.twoPlayers = twoPlayers;
+        this.parentFrame=frame;
 
         // chat gpt
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -61,6 +64,11 @@ public class GamePanel extends JPanel implements KeyListener {
         scoreBoard = new ScoreBoard();
 
         ball.reset(screenWidth, screenHeight, true);
+
+
+        gameOverOverlay = new GameOverOverlay(parentFrame, winscore, twoPlayers);
+        gameOverOverlay.setBounds(0, 0, screenWidth, screenHeight);
+        this.add(gameOverOverlay);
     }
 
     @Override
@@ -207,5 +215,6 @@ public class GamePanel extends JPanel implements KeyListener {
         gameover = true;
         timer.stop();
         speedTimer.stop();
+        gameOverOverlay.showOverlay();
     }
 }
