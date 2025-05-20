@@ -78,6 +78,15 @@ public class ModePanel extends JPanel {
 
         startButton=new JButton("Spustit hru");
         add(startButton);
+
+        JButton statsButton = new JButton("Zobraz statistiky");
+        statsButton.addActionListener(e -> {
+            JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+            StatsPanel statsPanel = new StatsPanel(frame);
+            frame.setContentPane(statsPanel);
+            frame.revalidate();
+        });
+        add(statsButton);
     }
     private void highlightSelectedButton(JButton selected) {
         resetButtonStyle(button3);
