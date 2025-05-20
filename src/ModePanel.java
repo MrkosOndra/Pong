@@ -15,18 +15,30 @@ public class ModePanel extends JPanel {
     private JButton aiButton;
 
     public ModePanel(ActionListener startListener) {
-        setLayout(new GridLayout(7, 1));
+        setLayout(new BoxLayout(this,BoxLayout.Y_AXIS));
         setBackground(Color.BLACK);
 
         JLabel title = new JLabel("PONG", SwingConstants.CENTER);
-        title.setFont(new Font("Arial", Font.BOLD, 48));
+        title.setFont(new Font("Arial", Font.BOLD, 52));
         title.setForeground(Color.WHITE);
+        title.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(title);
+
+        add(Box.createVerticalStrut(30));
+
         JLabel modeLabel = new JLabel("Zvol herní mód:", SwingConstants.CENTER);
         modeLabel.setForeground(Color.WHITE);
+        modeLabel.setFont(new Font("Arial", Font.PLAIN, 30));
+        modeLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(modeLabel);
 
+        add(Box.createVerticalStrut(10));
+
         aiButton = new JButton("Hráč vs AI");
+        aiButton.setFont(new Font("Arial", Font.PLAIN, 24));
+        aiButton.setMaximumSize(new Dimension(300, 80));
+        aiButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         aiButton.addActionListener(e -> {
             twoPlayers = false;
             aiButton.setBackground(Color.GREEN);
@@ -34,7 +46,12 @@ public class ModePanel extends JPanel {
         });
         add(aiButton);
 
+        add(Box.createVerticalStrut(10));
+
         twoPlayerButton = new JButton("Hráč vs Hráč");
+        twoPlayerButton.setFont(new Font("Arial", Font.PLAIN, 24));
+        twoPlayerButton.setMaximumSize(new Dimension(300, 80));
+        twoPlayerButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         twoPlayerButton.addActionListener(e -> {
             twoPlayers = true;
            twoPlayerButton.setBackground(Color.GREEN);
@@ -42,12 +59,19 @@ public class ModePanel extends JPanel {
         });
         add(twoPlayerButton);
 
+        add(Box.createVerticalStrut(30));
+
         JLabel scoreLabel = new JLabel("Vyber do kolika se hraje:", SwingConstants.CENTER);
         scoreLabel.setForeground(Color.WHITE);
+        scoreLabel.setFont(new Font("Arial", Font.PLAIN, 30));
+        scoreLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(scoreLabel);
+
+        add(Box.createVerticalStrut(10));
 
         JPanel scoreButtons = new JPanel();
         scoreButtons.setBackground(Color.BLACK);
+        scoreButtons.setLayout(new FlowLayout());
         button3 = new JButton("3");
         button5 = new JButton("5");
         button10 = new JButton("10");
@@ -75,18 +99,29 @@ public class ModePanel extends JPanel {
         scoreButtons.add(button10);
         scoreButtons.add(button15);
         add(scoreButtons);
+        add(Box.createVerticalStrut(30));
+
+        JPanel bottomButtons = new JPanel();
+        bottomButtons.setBackground(Color.BLACK);
+        bottomButtons.setLayout(new FlowLayout());
 
         startButton=new JButton("Spustit hru");
+        startButton.setFont(new Font("Arial", Font.BOLD, 18));
+        startButton.setPreferredSize(new Dimension(250, 80));
         add(startButton);
 
         JButton statsButton = new JButton("Zobraz statistiky");
+        statsButton.setFont(new Font("Arial", Font.BOLD, 18));
+        statsButton.setPreferredSize(new Dimension(280, 80));
         statsButton.addActionListener(e -> {
             JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
             StatsPanel statsPanel = new StatsPanel(frame);
             frame.setContentPane(statsPanel);
             frame.revalidate();
         });
-        add(statsButton);
+        bottomButtons.add(startButton);
+        bottomButtons.add(statsButton);
+        add(bottomButtons);
     }
     private void highlightSelectedButton(JButton selected) {
         resetButtonStyle(button3);
