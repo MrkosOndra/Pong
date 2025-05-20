@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="Vytvoreni tridy StatsPanel.java ktera dedi od JPanel a je v ni area ve ktere je vypis statistyk a tlacitko na navrat do menu">
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StatsPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <workItem from="1747420458536" duration="5001000" />
       <workItem from="1747563583659" duration="5252000" />
       <workItem from="1747676650011" duration="3383000" />
-      <workItem from="1747765609746" duration="2615000" />
+      <workItem from="1747765609746" duration="5405000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -329,7 +330,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747768894244</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="pridani tlacitka pro zobrazeni statistik">
+      <option name="closed" value="true" />
+      <created>1747769176266</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1747769176266</updated>
+    </task>
+    <task id="LOCAL-00034" summary="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek">
+      <option name="closed" value="true" />
+      <created>1747771355289</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1747771355289</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,8 +354,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat" />
-    <MESSAGE value="vytvoreni mice a roybohybovani ho" />
     <MESSAGE value="vygenerovani getteru" />
     <MESSAGE value="ve tride update udelani odrazu micku od hran a hracovi palky" />
     <MESSAGE value="v metode update udelani odrazu micku od hran a hracovi palky" />
@@ -362,6 +377,8 @@
     <MESSAGE value="vytvoreni tridy StatsManager.java kde se ukladaji data o odehranych hrach aby si hrac mohl zobrazit statistiky" />
     <MESSAGE value="pridani do endgame metody zjisteni kdo vyhral a ostatni potrebne pro metodu recordMatch" />
     <MESSAGE value="Vytvoreni tridy StatsPanel.java ktera dedi od JPanel a je v ni area ve ktere je vypis statistyk a tlacitko na navrat do menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni tridy StatsPanel.java ktera dedi od JPanel a je v ni area ve ktere je vypis statistyk a tlacitko na navrat do menu" />
+    <MESSAGE value="pridani tlacitka pro zobrazeni statistik" />
+    <MESSAGE value="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek" />
+    <option name="LAST_COMMIT_MESSAGE" value="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek" />
   </component>
 </project>
