@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="Inicializace parentFrame ktere je window coz je frame ve kterem se hraje hra">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="vytvoreni tridy StatsManager.java kde se ukladaji data o odehranych hrach aby si hrac mohl zobrazit statistiky">
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <workItem from="1747420458536" duration="5001000" />
       <workItem from="1747563583659" duration="5252000" />
       <workItem from="1747676650011" duration="3383000" />
-      <workItem from="1747765609746" duration="1261000" />
+      <workItem from="1747765609746" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -305,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747679648409</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="vytvoreni tridy StatsManager.java kde se ukladaji data o odehranych hrach aby si hrac mohl zobrazit statistiky">
+      <option name="closed" value="true" />
+      <created>1747767863225</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747767863225</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +321,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vytvoreni tridu Paddle.java kde vytvarime palku podle veliksoti obrazovky a metody k pohybu" />
     <MESSAGE value="implementace KeyListener a metod diky kterym muzeme pohybovat palkou pomoci W a S take pridani promene direction ktera bude udavat smer pokud 1 tak dolu a -1 nahoru 0 stoji a metoda update ktera aktualizuje jestli se palka vykresluje nahiru nebo dolu" />
     <MESSAGE value="pridani timer ktery kazdych 10 milisekund spusti metodu repaint a update a diky tomu se palka hybe" />
     <MESSAGE value="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat" />
@@ -338,6 +345,7 @@
     <MESSAGE value="pridani tridy GameOverOverlay.java ve ktere jsou Buttony pro hrani znovu a zpatky do menu a taky metoda pro ukazani ktera se vola po ukonceni hry v game panel v metode endgame" />
     <MESSAGE value="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru" />
     <MESSAGE value="Inicializace parentFrame ktere je window coz je frame ve kterem se hraje hra" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicializace parentFrame ktere je window coz je frame ve kterem se hraje hra" />
+    <MESSAGE value="vytvoreni tridy StatsManager.java kde se ukladaji data o odehranych hrach aby si hrac mohl zobrazit statistiky" />
+    <option name="LAST_COMMIT_MESSAGE" value="vytvoreni tridy StatsManager.java kde se ukladaji data o odehranych hrach aby si hrac mohl zobrazit statistiky" />
   </component>
 </project>

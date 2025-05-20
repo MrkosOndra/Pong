@@ -216,5 +216,8 @@ public class GamePanel extends JPanel implements KeyListener {
         timer.stop();
         speedTimer.stop();
         gameOverOverlay.showOverlay();
+
+        boolean player1Won = scoreBoard.getPlayerScore() >= winscore;
+        StatsManager.recordMatch(twoPlayers, player1Won, scoreBoard.getPlayerScore(), scoreBoard.getAiScore());
     }
 }
