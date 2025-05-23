@@ -35,5 +35,80 @@ public class SkinManager {
     public static String getSelectedBallSkin() {
         return selectedBallSkin;
     }
+    public static boolean selectBallSkin(String skinName) {
+        switch (skinName) {
+            case "default":
+                if (defaultSkinUnlocked) {
+                    selectedBallSkin = "default";
+                    return true;
+                }
+                break;
+            case "football":
+                if (footballUnlocked) {
+                    selectedBallSkin = "football";
+                    return true;
+                }
+                break;
+            case "volleyball":
+                if (volleyballUnlocked) {
+                    selectedBallSkin = "volleyball";
+                    return true;
+                }
+                break;
+            case "tennis":
+                if (tennisUnlocked) {
+                    selectedBallSkin = "tennis";
+                    return true;
+                }
+                break;
+        }
+        return false;
+    }
 
+    public static boolean purchaseBallSkin(String skinName) {
+        switch (skinName) {
+            case "football":
+                if (!footballUnlocked && coins >= footballPrice) {
+                    coins -= footballPrice;
+                    footballUnlocked = true;
+                    selectedBallSkin = "football";
+                    return true;
+                }
+                break;
+            case "volleyball":
+                if (!volleyballUnlocked && coins >= volleyballPrice) {
+                    coins -= volleyballPrice;
+                    volleyballUnlocked = true;
+                    selectedBallSkin = "volleyball";
+                    return true;
+                }
+                break;
+            case "tennis":
+                if (!tennisUnlocked && coins >= tennisPrice) {
+                    coins -= tennisPrice;
+                    tennisUnlocked = true;
+                    selectedBallSkin = "tennis";
+                    return true;
+                }
+                break;
+        }
+        return false;
+    }
+
+    public static boolean isBallSkinUnlocked(String skinName) {
+        switch (skinName) {
+            case "default":
+                return defaultSkinUnlocked;
+            case "football":
+                return footballUnlocked;
+            case "volleyball":
+                return volleyballUnlocked;
+            case "tennis":
+                return tennisUnlocked;
+            default:
+
+                return false;
+        }
+    }
 }
+
