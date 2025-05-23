@@ -110,5 +110,52 @@ public class SkinManager {
                 return false;
         }
     }
+    public static Color getPaddleColor() {
+        return paddleColor;
+    }
+
+    public static boolean purchasePaddleColor(Color color) {
+        if (color.equals(Color.RED)) {
+            if (!redPaddleUnlocked && coins >= paddleColorPrice) {
+                coins -= paddleColorPrice;
+                redPaddleUnlocked = true;
+            }
+            if (redPaddleUnlocked) {
+                paddleColor = color;
+                return true;
+            }
+        }
+
+        if (color.equals(Color.BLUE)) {
+            if (!bluePaddleUnlocked && coins >= paddleColorPrice) {
+                coins -= paddleColorPrice;
+                bluePaddleUnlocked = true;
+            }
+            if (bluePaddleUnlocked) {
+                paddleColor = color;
+                return true;
+            }
+        }
+
+        if (color.equals(Color.GREEN)) {
+            if (!greenPaddleUnlocked && coins >= paddleColorPrice) {
+                coins -= paddleColorPrice;
+                greenPaddleUnlocked = true;
+            }
+            if (greenPaddleUnlocked) {
+                paddleColor = color;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean isPaddleColorUnlocked(Color color) {
+        if (color.equals(Color.RED)) return redPaddleUnlocked;
+        if (color.equals(Color.BLUE)) return bluePaddleUnlocked;
+        if (color.equals(Color.GREEN)) return greenPaddleUnlocked;
+        return false;
+    }
 }
 

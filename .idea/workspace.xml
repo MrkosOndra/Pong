@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek">
-      <change afterPath="$PROJECT_DIR$/src/SkinManager.java" afterDir="false" />
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="Pridani metod selectedBallSkin ve ktere si hrac bude moct vybrat skin pokud je odemceny a purchaseBallSkin ktera bude slouzit k nakupu skinu na micek">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SkinManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,9 @@
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -73,7 +76,7 @@
       <workItem from="1747563583659" duration="5252000" />
       <workItem from="1747676650011" duration="3383000" />
       <workItem from="1747765609746" duration="5907000" />
-      <workItem from="1748013736403" duration="2020000" />
+      <workItem from="1748013736403" duration="3750000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -355,7 +358,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747772207465</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Vytvoreni tridy SkinManager.java ktera bude potreba k obchodu pridani promenych ktere jsou static aby jsem nemusel pak vsude vytvaret instanci a metody addCoins ktera bude pridavat penize za vyhru">
+      <option name="closed" value="true" />
+      <created>1748016637910</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1748016637910</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Pridani metod selectedBallSkin ve ktere si hrac bude moct vybrat skin pokud je odemceny a purchaseBallSkin ktera bude slouzit k nakupu skinu na micek">
+      <option name="closed" value="true" />
+      <created>1748017322520</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1748017322520</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,8 +382,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ve tride update udelani odrazu micku od hran a hracovi palky" />
-    <MESSAGE value="v metode update udelani odrazu micku od hran a hracovi palky" />
     <MESSAGE value="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky" />
     <MESSAGE value="pridani metody reset aby se micek mohl resetovat po golu" />
     <MESSAGE value="pridani metod pohybu pro Ai palku aby hrac mohl jednoduseji vstrelit gol metoda palku vzdy posune na opacnou stranu nez ma jet o 3 pixely" />
@@ -388,6 +405,8 @@
     <MESSAGE value="pridani tlacitka pro zobrazeni statistik" />
     <MESSAGE value="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek" />
     <MESSAGE value="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek" />
-    <option name="LAST_COMMIT_MESSAGE" value="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek" />
+    <MESSAGE value="Vytvoreni tridy SkinManager.java ktera bude potreba k obchodu pridani promenych ktere jsou static aby jsem nemusel pak vsude vytvaret instanci a metody addCoins ktera bude pridavat penize za vyhru" />
+    <MESSAGE value="Pridani metod selectedBallSkin ve ktere si hrac bude moct vybrat skin pokud je odemceny a purchaseBallSkin ktera bude slouzit k nakupu skinu na micek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridani metod selectedBallSkin ve ktere si hrac bude moct vybrat skin pokud je odemceny a purchaseBallSkin ktera bude slouzit k nakupu skinu na micek" />
   </component>
 </project>
