@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek">
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek">
+      <change afterPath="$PROJECT_DIR$/src/SkinManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StatsPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,8 @@
       <workItem from="1747420458536" duration="5001000" />
       <workItem from="1747563583659" duration="5252000" />
       <workItem from="1747676650011" duration="3383000" />
-      <workItem from="1747765609746" duration="5405000" />
+      <workItem from="1747765609746" duration="5907000" />
+      <workItem from="1748013736403" duration="2020000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -346,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747771355289</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek">
+      <option name="closed" value="true" />
+      <created>1747772207465</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1747772207465</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +363,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vygenerovani getteru" />
     <MESSAGE value="ve tride update udelani odrazu micku od hran a hracovi palky" />
     <MESSAGE value="v metode update udelani odrazu micku od hran a hracovi palky" />
     <MESSAGE value="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky" />
@@ -379,6 +387,7 @@
     <MESSAGE value="Vytvoreni tridy StatsPanel.java ktera dedi od JPanel a je v ni area ve ktere je vypis statistyk a tlacitko na navrat do menu" />
     <MESSAGE value="pridani tlacitka pro zobrazeni statistik" />
     <MESSAGE value="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek" />
-    <option name="LAST_COMMIT_MESSAGE" value="upraveni modePanel aby vypadal lepe zmena velikosti serazeni tlacitek" />
+    <MESSAGE value="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek" />
+    <option name="LAST_COMMIT_MESSAGE" value="upraveni StatsPanel.java aby vypadal lepe zmena velikosti serazeni tlacitek" />
   </component>
 </project>
