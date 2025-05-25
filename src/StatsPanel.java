@@ -12,9 +12,9 @@ public class StatsPanel extends JPanel {
 
         JTextArea area = new JTextArea();
         area.setEditable(false);
-        area.setFont(new Font("Monospaced", Font.PLAIN, 16));
+        area.setFont(new Font("Monospaced", Font.PLAIN, 24));
         area.setBackground(Color.BLACK);
-        area.setForeground(Color.GREEN);
+        area.setForeground(Color.WHITE);
         //chat gpt
         StringBuilder stats = new StringBuilder();
         stats.append("CELKEM HER: ").append(StatsManager.getTotalGames()).append("\n");
@@ -48,7 +48,7 @@ public class StatsPanel extends JPanel {
         });
 
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setBackground(Color.DARK_GRAY);
+        buttonPanel.setBackground(Color.BLACK);
         buttonPanel.add(backButton);
 
         innerPanel.add(buttonPanel, BorderLayout.SOUTH);
