@@ -119,6 +119,16 @@ public class ModePanel extends JPanel {
             frame.setContentPane(statsPanel);
             frame.revalidate();
         });
+        JButton shopButton = new JButton("Obchod");
+        shopButton.setFont(new Font("Arial", Font.PLAIN, 18));
+        shopButton.setPreferredSize(new Dimension(280,80));
+        shopButton.addActionListener(e -> {
+            ShopPanel shop = new ShopPanel(SwingUtilities.getWindowAncestor(this));
+            JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+            frame.setContentPane(shop);
+            frame.revalidate();
+        });
+        bottomButtons.add(shopButton);
         bottomButtons.add(startButton);
         bottomButtons.add(statsButton);
         add(bottomButtons);
