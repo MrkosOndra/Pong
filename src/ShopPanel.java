@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ShopPanel extends JPanel {
-    public ShopPanel(JFrame frame) {
+    public ShopPanel(Container parentFrame) {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         setBackground(Color.BLACK);
 
@@ -46,8 +46,6 @@ public class ShopPanel extends JPanel {
 
         add(ballPanel);
 
-        add(Box.createVerticalStrut(30));
-
         JLabel paddleLabel = new JLabel("Vyber barvu pálky:");
         paddleLabel.setForeground(Color.WHITE);
         paddleLabel.setFont(new Font("Arial", Font.PLAIN, 18));
@@ -80,6 +78,22 @@ public class ShopPanel extends JPanel {
         redBtn.addActionListener(e -> handlePaddleColorSelection(Color.RED, coinsLabel));
         blueBtn.addActionListener(e -> handlePaddleColorSelection(Color.BLUE, coinsLabel));
         greenBtn.addActionListener(e -> handlePaddleColorSelection(Color.GREEN, coinsLabel));
+
+        JButton back = new JButton("Zpět do menu");
+        back.addActionListener(e -> {
+            ModePanel menu = new ModePanel(null);
+            menu.getStartButton().addActionListener(event -> {
+                int winScore = menu.getWinscore();
+                boolean twoPlayers = menu.isTwoPlayers();
+                GamePanel game = new GamePanel(winScore, twoPlayers, (JFrame) parentFrame);
+                ((JFrame) parentFrame).setContentPane(game);
+                ((JFrame) parentFrame).revalidate();
+                game.requestFocusInWindow();
+            });
+            ((JFrame) parentFrame).setContentPane(menu);
+            ((JFrame) parentFrame).revalidate();
+        });
+        add(back);
     }
     //chat gpt
     private void handleBallSelection(String skinName, JLabel coinsLabel) {
@@ -87,8 +101,8 @@ public class ShopPanel extends JPanel {
             SkinManager.selectBallSkin(skinName);
             JOptionPane.showMessageDialog(this, "Používáš skin: " + skinName);
         } else {
-            boolean unlockedB = SkinManager.purchaseBallSkin(skinName);
-            if (unlockedB) {
+            boolean unlockedBall = SkinManager.purchaseBallSkin(skinName);
+            if (unlockedBall) {
                 JOptionPane.showMessageDialog(this, "Koupil jsi skin: " + skinName);
             } else {
                 JOptionPane.showMessageDialog(this, "Nedostatek bodů!");
@@ -102,8 +116,8 @@ public class ShopPanel extends JPanel {
             SkinManager.purchasePaddleColor(color);
             JOptionPane.showMessageDialog(this, "Používáš novou barvu pálky!");
         } else {
-            boolean unlockedP = SkinManager.purchasePaddleColor(color);
-            if (unlockedP) {
+            boolean unlockedPaddle = SkinManager.purchasePaddleColor(color);
+            if (unlockedPaddle) {
                 JOptionPane.showMessageDialog(this, "Zakoupil jsi novou barvu pálky!");
             } else {
                 JOptionPane.showMessageDialog(this, "Nedostatek bodů!");
