@@ -21,5 +21,48 @@ public class ShopPanel extends JPanel {
         add(Box.createVerticalStrut(10));
         add(coinsLabel);
 
+        add(Box.createVerticalStrut(30));
+
+        JLabel ballLabel = new JLabel("Vyber míček:");
+        ballLabel.setForeground(Color.WHITE);
+        ballLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+        ballLabel.setAlignmentX(CENTER_ALIGNMENT);
+        add(ballLabel);
+
+        JPanel ballPanel = new JPanel();
+        ballPanel.setBackground(Color.BLACK);
+
+        JButton footballBtn = new JButton(new ImageIcon());
+        JButton volleyballBtn = new JButton(new ImageIcon());
+        JButton tennisBtn = new JButton(new ImageIcon());
+
+        footballBtn.addActionListener(e -> handleBallSelection ("football", coinsLabel));
+        volleyballBtn.addActionListener(e -> handleBallSelection("volleyball", coinsLabel));
+        tennisBtn.addActionListener(e -> handleBallSelection("tennis", coinsLabel));
+
+        ballPanel.add(footballBtn);
+        ballPanel.add(volleyballBtn);
+        ballPanel.add(tennisBtn);
+
+        add(ballPanel);
+
+        add(Box.createVerticalStrut(30));
+
+    }
+    //chat gpt
+    private void handleBallSelection(String skinName, JLabel coinsLabel) {
+        if (SkinManager.isBallSkinUnlocked(skinName)) {
+            SkinManager.selectBallSkin(skinName);
+            JOptionPane.showMessageDialog(this, "Používáš skin: " + skinName);
+        } else {
+            boolean unlocked = SkinManager.purchaseBallSkin(skinName);
+            if (unlocked) {
+                JOptionPane.showMessageDialog(this, "Koupil jsi skin: " + skinName);
+            } else {
+                JOptionPane.showMessageDialog(this, "Nedostatek bodů!");
+            }
+        }
+
+        coinsLabel.setText("Máš " + SkinManager.getCoins() + " bodů");
     }
 }
