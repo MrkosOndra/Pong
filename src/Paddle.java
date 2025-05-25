@@ -13,7 +13,7 @@ public class Paddle {
         this.height = height;
     }
     public void draw(Graphics g){
-        g.setColor(Color.WHITE);
+        g.setColor(SkinManager.getPaddleColor());
         g.fillRect(x, y, width, height);
     }
     public void moveUp() {

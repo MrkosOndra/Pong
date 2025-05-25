@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani Panelu ve kterem jsou tlacitka s ruznymi druhy micku a metody handleBallSelection ktera udela bud vyber skinu pokud je odmecney nebo se pokusi koupit micek pokud je dost coinu a nakonec aktualizuje pocet coinu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShopPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopPanel.java" afterDir="false" />
-    </list>
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani Panelu ve kterem jsou tlacitka s ruznymi barvami palek a metody handlePaddleColorSelection ktera je stejna jako handleBallSelection ale pro palku" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +74,7 @@
       <workItem from="1747676650011" duration="3383000" />
       <workItem from="1747765609746" duration="5907000" />
       <workItem from="1748013736403" duration="4054000" />
-      <workItem from="1748181886716" duration="2902000" />
+      <workItem from="1748181886716" duration="3640000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -399,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748184432699</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="pridani Panelu ve kterem jsou tlacitka s ruznymi barvami palek a metody handlePaddleColorSelection ktera je stejna jako handleBallSelection ale pro palku">
+      <option name="closed" value="true" />
+      <created>1748186240635</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1748186240635</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +412,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pridani aby se micek postupne zrchloval pomoci Timer a po golu resetnul na puvodni rychlost" />
     <MESSAGE value="upraveni o kolik je Ai palka oslabena" />
     <MESSAGE value="vytvoreni tridy ScoreBoard.java kde je score a pricitani bodu za gol" />
     <MESSAGE value="implementace ScoreBoard" />
@@ -432,6 +436,7 @@
     <MESSAGE value="Pridani metod pro nakup barvy pro palku a metody ktera kontroluje jestli je palka koupena" />
     <MESSAGE value="Vytvoreni tridy ShopPanel.java pridani nadpisu obchod a ukazani poctu coinu" />
     <MESSAGE value="pridani Panelu ve kterem jsou tlacitka s ruznymi druhy micku a metody handleBallSelection ktera udela bud vyber skinu pokud je odmecney nebo se pokusi koupit micek pokud je dost coinu a nakonec aktualizuje pocet coinu" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani Panelu ve kterem jsou tlacitka s ruznymi druhy micku a metody handleBallSelection ktera udela bud vyber skinu pokud je odmecney nebo se pokusi koupit micek pokud je dost coinu a nakonec aktualizuje pocet coinu" />
+    <MESSAGE value="pridani Panelu ve kterem jsou tlacitka s ruznymi barvami palek a metody handlePaddleColorSelection ktera je stejna jako handleBallSelection ale pro palku" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridani Panelu ve kterem jsou tlacitka s ruznymi barvami palek a metody handlePaddleColorSelection ktera je stejna jako handleBallSelection ale pro palku" />
   </component>
 </project>
