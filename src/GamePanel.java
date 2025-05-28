@@ -22,14 +22,14 @@ public class GamePanel extends JPanel implements KeyListener {
     private boolean twoPlayers;
 
 
-    public GamePanel(int winscore, boolean twoPlayers,JFrame frame) {
+    public GamePanel(int winscore, boolean twoPlayers, JFrame frame) {
         this.winscore = winscore;
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.setLayout(null);
         this.addKeyListener(this);
         this.twoPlayers = twoPlayers;
-        this.parentFrame=frame;
+        this.parentFrame = frame;
 
         // chat gpt
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -86,11 +86,11 @@ public class GamePanel extends JPanel implements KeyListener {
             if (scoreBoard.getPlayerScore() >= winscore) {
                 winner = "VYHRÁL HRÁČ!";
             } else {
-               if(twoPlayers){
-                   winner= "VYHRÁL HRÁČ2!";
-               }else{
-                   winner="VYHRÁLA AI!";
-               }
+                if (twoPlayers) {
+                    winner = "VYHRÁL HRÁČ2!";
+                } else {
+                    winner = "VYHRÁLA AI!";
+                }
             }
 
             int textWidth = g.getFontMetrics().stringWidth(winner);
@@ -219,5 +219,10 @@ public class GamePanel extends JPanel implements KeyListener {
 
         boolean player1Won = scoreBoard.getPlayerScore() >= winscore;
         StatsManager.recordMatch(twoPlayers, player1Won, scoreBoard.getPlayerScore(), scoreBoard.getAiScore());
+        if (player1Won) {
+            SkinManager.addCoins(15);
+        }else{
+            SkinManager.addCoins(5);
+        }
     }
 }

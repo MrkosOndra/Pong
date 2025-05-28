@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani vykresleni palky podle SkinManager">
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ModePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShopPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StatsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SkinManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,9 @@
       <workItem from="1747676650011" duration="3383000" />
       <workItem from="1747765609746" duration="5907000" />
       <workItem from="1748013736403" duration="4054000" />
-      <workItem from="1748181886716" duration="5023000" />
+      <workItem from="1748181886716" duration="5991000" />
+      <workItem from="1748194885955" duration="174000" />
+      <workItem from="1748452999527" duration="8783000" />
     </task>
     <task id="LOCAL-00001" summary="Zalozeni">
       <option name="closed" value="true" />
@@ -417,7 +421,55 @@
       <option name="project" value="LOCAL" />
       <updated>1748186498209</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="pridani tlacitka pro vstup do obchodu">
+      <option name="closed" value="true" />
+      <created>1748188429655</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1748188429655</updated>
+    </task>
+    <task id="LOCAL-00044" summary="pridani tlacitka back pro navrat do ModePanel">
+      <option name="closed" value="true" />
+      <created>1748188548001</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1748188548001</updated>
+    </task>
+    <task id="LOCAL-00045" summary="zmena velikosti pisma a barvy">
+      <option name="closed" value="true" />
+      <created>1748188612356</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1748188612356</updated>
+    </task>
+    <task id="LOCAL-00046" summary="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci">
+      <option name="closed" value="true" />
+      <created>1748459623375</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1748459623375</updated>
+    </task>
+    <task id="LOCAL-00047" summary="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci">
+      <option name="closed" value="true" />
+      <created>1748459650137</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1748459650137</updated>
+    </task>
+    <task id="LOCAL-00048" summary="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci">
+      <option name="closed" value="true" />
+      <created>1748459662670</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1748459662670</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,10 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="vytvoreni tridy ScoreBoard.java kde je score a pricitani bodu za gol" />
-    <MESSAGE value="implementace ScoreBoard" />
-    <MESSAGE value="vytvoreni tridy ModePanel.java ktera dedi od JPanel a hrac v Panelu bude vybirat zda chce hrat sam proti Ai a nebo hrat ve dvou a taky do kolika se bude hrat" />
-    <MESSAGE value="pridani modepanel aby hrac nejdrive mohl vybrat jak chce hrat a do kolika a pak spustil hru" />
     <MESSAGE value="pridani promenych winscore a twoPlayers do konstruktoru" />
     <MESSAGE value="pridani startButton jako promene" />
     <MESSAGE value="pridani zvyrazneni vybraneho modu a poctu do kolika hrac chce hrat" />
@@ -450,6 +498,10 @@
     <MESSAGE value="pridani Panelu ve kterem jsou tlacitka s ruznymi druhy micku a metody handleBallSelection ktera udela bud vyber skinu pokud je odmecney nebo se pokusi koupit micek pokud je dost coinu a nakonec aktualizuje pocet coinu" />
     <MESSAGE value="pridani Panelu ve kterem jsou tlacitka s ruznymi barvami palek a metody handlePaddleColorSelection ktera je stejna jako handleBallSelection ale pro palku" />
     <MESSAGE value="pridani vykresleni palky podle SkinManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani vykresleni palky podle SkinManager" />
+    <MESSAGE value="pridani tlacitka pro vstup do obchodu" />
+    <MESSAGE value="pridani tlacitka back pro navrat do ModePanel" />
+    <MESSAGE value="zmena velikosti pisma a barvy" />
+    <MESSAGE value="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci" />
+    <option name="LAST_COMMIT_MESSAGE" value="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci" />
   </component>
 </project>
