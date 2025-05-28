@@ -1,6 +1,7 @@
 import java.awt.*;
 
 public class Ball {
+    private Color color;
 
     private int x, y;
     private int width, height;
@@ -13,6 +14,7 @@ public class Ball {
         this.y = y;
         this.width = width;
         this.height = height;
+        this.color=SkinManager.getBallColor();
 
         xVelocity= speed;
         yVelocity= speed;
@@ -22,7 +24,7 @@ public void move(){
     y += yVelocity;
 }
 public void draw(Graphics g){
-    g.setColor(Color.WHITE);
+    g.setColor(color);
     g.fillOval(x, y, width, height);
 }
 public void ReverseXDirection(){
