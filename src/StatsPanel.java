@@ -2,16 +2,22 @@ import javax.swing.*;
 import java.awt.*;
 
 public class StatsPanel extends JPanel {
+    private JButton backButton;
+    private JLabel titleLabel;
+    private JTextArea area;
     public StatsPanel(JFrame frame) {
-        setLayout(new GridBagLayout());
+        setLayout(null);
         setBackground(Color.BLACK);
 
-        JPanel innerPanel = new JPanel(new BorderLayout());
-        innerPanel.setPreferredSize(new Dimension(600, 400));
-        innerPanel.setBackground(Color.DARK_GRAY);
+        titleLabel = new JLabel("Statistiky hry:");
+        titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
+        titleLabel.setBounds(50, 20, 300, 40);
+        titleLabel.setForeground(Color.WHITE);
+        add(titleLabel);
 
-        JTextArea area = new JTextArea();
+        area = new JTextArea();
         area.setEditable(false);
+        area.setBounds(50, 70, 300, 150);
         area.setFont(new Font("Monospaced", Font.PLAIN, 24));
         area.setBackground(Color.BLACK);
         area.setForeground(Color.WHITE);
@@ -28,10 +34,10 @@ public class StatsPanel extends JPanel {
         }
 
         area.setText(stats.toString());
-        innerPanel.add(area);
+        add(area);
 
-        JButton backButton = new JButton("Zpět do menu");
-        backButton.setPreferredSize(new Dimension(160, 35));
+        backButton = new JButton("Zpět do menu");
+        backButton.setBounds(50, 240, 200, 40);
         backButton.setFont(new Font("Arial", Font.PLAIN, 16));
         backButton.addActionListener(e -> {
                 ModePanel menu = new ModePanel(null);
@@ -46,13 +52,7 @@ public class StatsPanel extends JPanel {
             frame.setContentPane(menu);
             frame.revalidate();
         });
+        add(backButton);
 
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.setBackground(Color.BLACK);
-        buttonPanel.add(backButton);
-
-        innerPanel.add(buttonPanel, BorderLayout.SOUTH);
-
-        add(innerPanel);
     }
 }
