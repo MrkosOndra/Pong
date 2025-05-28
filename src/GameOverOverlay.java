@@ -9,6 +9,7 @@ public class GameOverOverlay extends JPanel {
         setLayout(null);
         setBackground(new Color(0, 0, 0, 150));
         setVisible(false);
+        //chatgpt
         int screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;
         int screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;
 
@@ -23,6 +24,7 @@ public class GameOverOverlay extends JPanel {
 
         menuButton = new JButton("Zpět do menu");
         menuButton.setBounds(screenWidth / 2 + 10, screenHeight / 2 + 60, 140, 40);
+        //chatgpt
         menuButton.addActionListener(e -> {
             ModePanel menu = new ModePanel(null);
             menu.getStartButton().addActionListener(event -> {
