@@ -7,9 +7,9 @@ public class ShopPanel extends JPanel {
     private JLabel coinsLabel;
     private JLabel ballLabel;
     private JLabel paddleLabel;
-    private JButton  footballBtn;
-    private JButton volleyballBtn;
-    private JButton tennisBtn;
+    private JButton  redBall;
+    private JButton greenBall;
+    private JButton yellowBall;
     private JButton redBtn;
     private JButton blueBtn;
     private JButton greenBtn;
@@ -39,22 +39,22 @@ public class ShopPanel extends JPanel {
         ballLabel = new JLabel("Vyber barvu míčku(cena 20 coinu:");
         ballLabel.setForeground(Color.WHITE);
         ballLabel.setFont(new Font("Arial", Font.PLAIN, 18));
-        ballLabel.setBounds(50, 130, 200, 30);
+        ballLabel.setBounds(50, 130, 400, 30);
         add(ballLabel);
 
-        JButton redBall = new JButton();
+        redBall = new JButton();
         redBall.setBackground(Color.RED);
         redBall.setBounds(50, 170, 50, 50);
         redBall.addActionListener(e -> handleBallColorSelection(Color.RED, coinsLabel));
         add(redBall);
 
-        JButton greenBall = new JButton();
+        greenBall = new JButton();
         greenBall.setBackground(Color.GREEN);
         greenBall.setBounds(110, 170, 50, 50);
         greenBall.addActionListener(e -> handleBallColorSelection(Color.GREEN, coinsLabel));
         add(greenBall);
 
-        JButton yellowBall = new JButton();
+        yellowBall = new JButton();
         yellowBall.setBackground(Color.YELLOW);
         yellowBall.setBounds(170, 170, 50, 50);
         yellowBall.addActionListener(e -> handleBallColorSelection(Color.YELLOW, coinsLabel));
@@ -66,7 +66,7 @@ public class ShopPanel extends JPanel {
         paddleLabel = new JLabel("Vyber barvu pálky(cena 20 coinu):");
         paddleLabel.setForeground(Color.WHITE);
         paddleLabel.setFont(new Font("Arial", Font.PLAIN, 18));
-        paddleLabel.setBounds(50, 230, 200, 30);
+        paddleLabel.setBounds(50, 230, 400, 30);
         add(paddleLabel);
 
 
@@ -86,7 +86,7 @@ public class ShopPanel extends JPanel {
 
         greenBtn = new JButton();
         greenBtn.setBackground(Color.GREEN);
-        blueBtn.setBounds(110, 270, 50, 50);
+        greenBtn.setBounds(170, 270, 50, 50);
         greenBtn.setFocusPainted(false);
         greenBtn.addActionListener(e -> handlePaddleColorSelection(Color.GREEN, coinsLabel));
         add(greenBtn);
@@ -118,7 +118,7 @@ public class ShopPanel extends JPanel {
             if (success) {
                 JOptionPane.showMessageDialog(this, "Zakoupil jsi novou barvu micku");
             } else {
-                JOptionPane.showMessageDialog(this, "Nedostatek bodu!");
+                JOptionPane.showMessageDialog(this, "Nedostatek coinu!");
             }
             coinsLabel.setText("Máš " + SkinManager.getCoins() + " coinu");
         }
@@ -132,10 +132,10 @@ public class ShopPanel extends JPanel {
             if (unlockedPaddle) {
                 JOptionPane.showMessageDialog(this, "Zakoupil jsi novou barvu pálky!");
             } else {
-                JOptionPane.showMessageDialog(this, "Nedostatek bodu!");
+                JOptionPane.showMessageDialog(this, "Nedostatek coinu!");
             }
         }
 
-        coinsLabel.setText("Máš " + SkinManager.getCoins() + " bodů");
+        coinsLabel.setText("Máš " + SkinManager.getCoins() + " coinu");
     }
 }

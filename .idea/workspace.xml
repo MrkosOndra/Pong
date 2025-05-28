@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="pridani do metody endgame pridavani coinu za vyhru">
       <change beforePath="$PROJECT_DIR$/src/ShopPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SkinManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,23 +78,7 @@
       <workItem from="1748013736403" duration="4054000" />
       <workItem from="1748181886716" duration="5991000" />
       <workItem from="1748194885955" duration="174000" />
-      <workItem from="1748452999527" duration="8783000" />
-    </task>
-    <task id="LOCAL-00001" summary="Zalozeni">
-      <option name="closed" value="true" />
-      <created>1744895162874</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1744895162874</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Zalozeni">
-      <option name="closed" value="true" />
-      <created>1744895305717</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1744895305717</updated>
+      <workItem from="1748452999527" duration="9914000" />
     </task>
     <task id="LOCAL-00003" summary="vytvoreni okna a tridy GamePanel.java kde se bude vykreslovat hra">
       <option name="closed" value="true" />
@@ -469,7 +448,31 @@
       <option name="project" value="LOCAL" />
       <updated>1748459662670</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="predelani z skinu na micky na pouze barvy pridani metod pro nakup bary micku kontroly zda vlastni barvu micku a vyber micku">
+      <option name="closed" value="true" />
+      <created>1748462267454</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1748462267454</updated>
+    </task>
+    <task id="LOCAL-00050" summary="prdelani buttonu s barvou na micek a pridani metody handleBallColorSelection ktera je stejna jako handlePaddleColorSelection ale pro micek">
+      <option name="closed" value="true" />
+      <created>1748462601416</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1748462601417</updated>
+    </task>
+    <task id="LOCAL-00051" summary="pridani do metody endgame pridavani coinu za vyhru">
+      <option name="closed" value="true" />
+      <created>1748462704021</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1748462704021</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,9 +480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pridani promenych winscore a twoPlayers do konstruktoru" />
-    <MESSAGE value="pridani startButton jako promene" />
-    <MESSAGE value="pridani zvyrazneni vybraneho modu a poctu do kolika hrac chce hrat" />
     <MESSAGE value="pridani ukonceni hry po vstreleni poctu golu ktery si hrac na zacatku hry vybere" />
     <MESSAGE value="predelani metody update do vice metod pro prehlednost kodu a priadni hry pro 2 hrace a vypisu kdzy vyhraje hrac2" />
     <MESSAGE value="pridani tridy GameOverOverlay.java ve ktere jsou Buttony pro hrani znovu a zpatky do menu a taky metoda pro ukazani ktera se vola po ukonceni hry v game panel v metode endgame" />
@@ -502,6 +502,9 @@
     <MESSAGE value="pridani tlacitka back pro navrat do ModePanel" />
     <MESSAGE value="zmena velikosti pisma a barvy" />
     <MESSAGE value="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci" />
-    <option name="LAST_COMMIT_MESSAGE" value="predelani umisteni tlacitek pomoci setBounds pro lepsi orientaci" />
+    <MESSAGE value="predelani z skinu na micky na pouze barvy pridani metod pro nakup bary micku kontroly zda vlastni barvu micku a vyber micku" />
+    <MESSAGE value="prdelani buttonu s barvou na micek a pridani metody handleBallColorSelection ktera je stejna jako handlePaddleColorSelection ale pro micek" />
+    <MESSAGE value="pridani do metody endgame pridavani coinu za vyhru" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridani do metody endgame pridavani coinu za vyhru" />
   </component>
 </project>
