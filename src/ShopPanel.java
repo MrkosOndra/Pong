@@ -2,84 +2,94 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ShopPanel extends JPanel {
-    public ShopPanel(Container parentFrame) {
-        setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+    private JLabel title;
+    private JButton backButton;
+    private JLabel coinsLabel;
+    private JLabel ballLabel;
+    private JLabel paddleLabel;
+    private JButton  footballBtn;
+    private JButton volleyballBtn;
+    private JButton tennisBtn;
+    private JButton redBtn;
+    private JButton blueBtn;
+    private JButton greenBtn;
+    private JButton back;
+
+    public ShopPanel(JFrame parentFrame) {
+        setLayout(null);
         setBackground(Color.BLACK);
 
-        JLabel title = new JLabel("OBCHOD");
+        title = new JLabel("OBCHOD");
         title.setFont(new Font("Arial", Font.BOLD, 36));
         title.setForeground(Color.WHITE);
-        title.setAlignmentX(CENTER_ALIGNMENT);
+        title.setBounds(300, 20, 300, 40);
         add(Box.createVerticalStrut(20));
         add(title);
 
 
-        JLabel coinsLabel = new JLabel("Máš " + SkinManager.getCoins() + " coinu");
+        coinsLabel = new JLabel("Máš " + SkinManager.getCoins() + " coinu");
         coinsLabel.setForeground(Color.GREEN);
+        coinsLabel.setBounds(50, 30, 200, 30);
         coinsLabel.setFont(new Font("Arial", Font.PLAIN, 20));
-        coinsLabel.setAlignmentX(CENTER_ALIGNMENT);
         add(Box.createVerticalStrut(10));
         add(coinsLabel);
 
         add(Box.createVerticalStrut(30));
 
-        JLabel ballLabel = new JLabel("Vyber míček:");
+        ballLabel = new JLabel("Vyber míček:");
         ballLabel.setForeground(Color.WHITE);
         ballLabel.setFont(new Font("Arial", Font.PLAIN, 18));
-        ballLabel.setAlignmentX(CENTER_ALIGNMENT);
+        ballLabel.setBounds(50, 130, 200, 30);
         add(ballLabel);
 
-        JPanel ballPanel = new JPanel();
-        ballPanel.setBackground(Color.BLACK);
-
-        JButton footballBtn = new JButton(new ImageIcon());
-        JButton volleyballBtn = new JButton(new ImageIcon());
-        JButton tennisBtn = new JButton(new ImageIcon());
-
+        footballBtn = new JButton(new ImageIcon());
+        footballBtn.setBounds(50, 170, 100, 40);
         footballBtn.addActionListener(e -> handleBallSelection ("football", coinsLabel));
+        add(footballBtn);
+
+        volleyballBtn = new JButton(new ImageIcon());
+        volleyballBtn.setBounds(160, 170, 100, 40);
         volleyballBtn.addActionListener(e -> handleBallSelection("volleyball", coinsLabel));
+
+        add(volleyballBtn);
+        tennisBtn = new JButton(new ImageIcon());
+        tennisBtn.setBounds(270, 170, 100, 40);
         tennisBtn.addActionListener(e -> handleBallSelection("tennis", coinsLabel));
+        add(tennisBtn);
 
-        ballPanel.add(footballBtn);
-        ballPanel.add(volleyballBtn);
-        ballPanel.add(tennisBtn);
 
-        add(ballPanel);
 
-        JLabel paddleLabel = new JLabel("Vyber barvu pálky:");
+
+        paddleLabel = new JLabel("Vyber barvu pálky:");
         paddleLabel.setForeground(Color.WHITE);
         paddleLabel.setFont(new Font("Arial", Font.PLAIN, 18));
-        paddleLabel.setAlignmentX(CENTER_ALIGNMENT);
+        paddleLabel.setBounds(50, 230, 200, 30);
         add(paddleLabel);
 
-        JPanel paddlePanel = new JPanel();
-        paddlePanel.setBackground(Color.BLACK);
 
-        JButton redBtn = new JButton();
+        redBtn = new JButton();
         redBtn.setBackground(Color.RED);
-        redBtn.setPreferredSize(new Dimension(50, 50));
+        redBtn.setBounds(50, 270, 50, 50);
         redBtn.setFocusPainted(false);
-
-        JButton blueBtn = new JButton();
-        blueBtn.setBackground(Color.BLUE);
-        blueBtn.setPreferredSize(new Dimension(50, 50));
-        blueBtn.setFocusPainted(false);
-
-        JButton greenBtn = new JButton();
-        greenBtn.setBackground(Color.GREEN);
-        greenBtn.setPreferredSize(new Dimension(50, 50));
-        greenBtn.setFocusPainted(false);
-
-        paddlePanel.add(redBtn);
-        paddlePanel.add(blueBtn);
-        paddlePanel.add(greenBtn);
-        add(paddlePanel);
-
         redBtn.addActionListener(e -> handlePaddleColorSelection(Color.RED, coinsLabel));
-        blueBtn.addActionListener(e -> handlePaddleColorSelection(Color.BLUE, coinsLabel));
-        greenBtn.addActionListener(e -> handlePaddleColorSelection(Color.GREEN, coinsLabel));
+        add(redBtn);
 
-        JButton back = new JButton("Zpět do menu");
+        blueBtn = new JButton();
+        blueBtn.setBackground(Color.BLUE);
+        blueBtn.setBounds(110, 270, 50, 50);
+        blueBtn.setFocusPainted(false);
+        blueBtn.addActionListener(e -> handlePaddleColorSelection(Color.BLUE, coinsLabel));
+        add(blueBtn);
+
+        greenBtn = new JButton();
+        greenBtn.setBackground(Color.GREEN);
+        blueBtn.setBounds(110, 270, 50, 50);
+        greenBtn.setFocusPainted(false);
+        greenBtn.addActionListener(e -> handlePaddleColorSelection(Color.GREEN, coinsLabel));
+        add(greenBtn);
+
+        back = new JButton("Zpět do menu");
+        back.setBounds(50, 350, 150, 40);
         back.addActionListener(e -> {
             ModePanel menu = new ModePanel(null);
             menu.getStartButton().addActionListener(event -> {
