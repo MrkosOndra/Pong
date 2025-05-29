@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="oprava mensich vizualnich chyb posunuti buttonu a sjednoceni vypisu">
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="rozdeleni kodu do Package pro prehlednost">
+      <change afterPath="$PROJECT_DIR$/src/PongGame/UnitTests/BallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PongGame/UnitTests/PaddleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PongGame/UnitTests/ScoreBoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PongGame/UnitTests/SkinManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/GameOverOverlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ModePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/ModePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/ScoreBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShopPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/ShopPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Managers/SkinManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StatsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Managers/StatsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StatsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/StatsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pong.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pong.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PongGame/Entities/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PongGame/Panels/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +44,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BallTest.executor": "Run",
+    "JUnit.BallTest.testReverseYDirection.executor": "Run",
+    "JUnit.GamePanelTest.executor": "Run",
+    "JUnit.PaddleTest.executor": "Run",
+    "JUnit.ScoreBoardTest.executor": "Run",
+    "JUnit.ScoreBoardTest.testAddPoints.executor": "Run",
+    "JUnit.SkinManagerTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="BallTest.testReverseYDirection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PongGame.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PongGame.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="PongGame.UnitTests.BallTest" />
+      <option name="METHOD_NAME" value="testReverseYDirection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreBoardTest.testAddPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PongGame.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PongGame.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="PongGame.UnitTests.ScoreBoardTest" />
+      <option name="METHOD_NAME" value="testAddPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BallTest.testReverseYDirection" />
+        <item itemvalue="JUnit.ScoreBoardTest.testAddPoints" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,15 +136,7 @@
       <workItem from="1748181886716" duration="5991000" />
       <workItem from="1748194885955" duration="174000" />
       <workItem from="1748452999527" duration="10332000" />
-      <workItem from="1748538211164" duration="823000" />
-    </task>
-    <task id="LOCAL-00004" summary="vytvoreni tridu Paddle.java kde vytvarime palku podle veliksoti obrazovky a metody k pohybu">
-      <option name="closed" value="true" />
-      <created>1744901387081</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1744901387081</updated>
+      <workItem from="1748538211164" duration="4372000" />
     </task>
     <task id="LOCAL-00005" summary="implementace KeyListener a metod diky kterym muzeme pohybovat palkou pomoci W a S take pridani promene direction ktera bude udavat smer pokud 1 tak dolu a -1 nahoru 0 stoji a metoda update ktera aktualizuje jestli se palka vykresluje nahiru nebo dolu">
       <option name="closed" value="true" />
@@ -484,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748463359118</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="rozdeleni kodu do Package pro prehlednost">
+      <option name="closed" value="true" />
+      <created>1748539451998</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1748539451998</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="predelani metody update do vice metod pro prehlednost kodu a priadni hry pro 2 hrace a vypisu kdzy vyhraje hrac2" />
     <MESSAGE value="pridani tridy GameOverOverlay.java ve ktere jsou Buttony pro hrani znovu a zpatky do menu a taky metoda pro ukazani ktera se vola po ukonceni hry v game panel v metode endgame" />
     <MESSAGE value="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru" />
     <MESSAGE value="Inicializace parentFrame ktere je window coz je frame ve kterem se hraje hra" />
@@ -517,6 +562,7 @@
     <MESSAGE value="prdelani buttonu s barvou na micek a pridani metody handleBallColorSelection ktera je stejna jako handlePaddleColorSelection ale pro micek" />
     <MESSAGE value="pridani do metody endgame pridavani coinu za vyhru" />
     <MESSAGE value="oprava mensich vizualnich chyb posunuti buttonu a sjednoceni vypisu" />
-    <option name="LAST_COMMIT_MESSAGE" value="oprava mensich vizualnich chyb posunuti buttonu a sjednoceni vypisu" />
+    <MESSAGE value="rozdeleni kodu do Package pro prehlednost" />
+    <option name="LAST_COMMIT_MESSAGE" value="rozdeleni kodu do Package pro prehlednost" />
   </component>
 </project>
