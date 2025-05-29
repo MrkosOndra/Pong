@@ -1,3 +1,7 @@
+package PongGame.Entities;
+
+import PongGame.Managers.SkinManager;
+
 import java.awt.*;
 
 public class Ball {
@@ -14,7 +18,7 @@ public class Ball {
         this.y = y;
         this.width = width;
         this.height = height;
-        this.color=SkinManager.getBallColor();
+        this.color= SkinManager.getBallColor();
 
         xVelocity= speed;
         yVelocity= speed;

@@ -1,3 +1,11 @@
+package PongGame.Panels;
+
+import PongGame.Entities.Ball;
+import PongGame.Entities.Paddle;
+import PongGame.Entities.ScoreBoard;
+import PongGame.Managers.SkinManager;
+import PongGame.Managers.StatsManager;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;

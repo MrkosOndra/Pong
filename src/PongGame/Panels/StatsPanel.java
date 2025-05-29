@@ -1,3 +1,7 @@
+package PongGame.Panels;
+
+import PongGame.Managers.StatsManager;
+
 import javax.swing.*;
 import java.awt.*;
 

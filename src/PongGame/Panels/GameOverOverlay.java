@@ -1,3 +1,8 @@
+package PongGame.Panels;
+
+import PongGame.Panels.GamePanel;
+import PongGame.Panels.ModePanel;
+
 import javax.swing.*;
 import java.awt.*;
 

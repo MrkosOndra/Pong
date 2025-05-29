@@ -1,3 +1,5 @@
+package PongGame.Managers;
+
 import java.awt.*;
 
 public class SkinManager {

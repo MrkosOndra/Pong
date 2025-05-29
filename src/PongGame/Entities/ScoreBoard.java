@@ -1,3 +1,5 @@
+package PongGame.Entities;
+
 import java.awt.*;
 
 public class ScoreBoard {

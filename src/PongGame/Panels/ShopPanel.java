@@ -1,3 +1,7 @@
+package PongGame.Panels;
+
+import PongGame.Managers.SkinManager;
+
 import javax.swing.*;
 import java.awt.*;
 

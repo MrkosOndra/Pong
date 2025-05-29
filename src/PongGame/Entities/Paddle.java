@@ -1,3 +1,7 @@
+package PongGame.Entities;
+
+import PongGame.Managers.SkinManager;
+
 import java.awt.*;
 
 public class Paddle {

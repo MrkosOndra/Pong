@@ -1,6 +1,10 @@
+package PongGame.Panels;
+
+import PongGame.Panels.ShopPanel;
+import PongGame.Panels.StatsPanel;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 public class ModePanel extends JPanel {
     private int winscore=0;
