@@ -129,15 +129,7 @@
       <workItem from="1748452999527" duration="10332000" />
       <workItem from="1748538211164" duration="4372000" />
       <workItem from="1748624908882" duration="3956000" />
-      <workItem from="1748631066144" duration="4268000" />
-    </task>
-    <task id="LOCAL-00012" summary="v metode update udelani odrazu micku od hran a hracovi palky">
-      <option name="closed" value="true" />
-      <created>1745953970725</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1745953970725</updated>
+      <workItem from="1748631066144" duration="4570000" />
     </task>
     <task id="LOCAL-00013" summary="vytvoreni ai palky a pridani aby se pohzbovala podle polohy micku a pridani odrazu micku od ai palky">
       <option name="closed" value="true" />
@@ -523,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748635639040</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="JavaDocs">
+      <option name="closed" value="true" />
+      <created>1748636030930</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1748636030931</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

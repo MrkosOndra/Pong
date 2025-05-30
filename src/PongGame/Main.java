@@ -4,8 +4,17 @@ import PongGame.Panels.GamePanel;
 import PongGame.Panels.ModePanel;
 
 import javax.swing.*;
-
+/**
+ * The main class that starts the Pong Game application.
+ */
 public class Main {
+
+    /**
+     * The main entry point of the game.
+     * Initializes the main window and sets the start menu panel.
+     *
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
         JFrame window = new JFrame("Pong Game");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

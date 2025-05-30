@@ -4,11 +4,19 @@ import PongGame.Managers.StatsManager;
 
 import javax.swing.*;
 import java.awt.*;
-
+/**
+ * StatsPanel displays statistics including total games played,
+ * player and AI wins, and the match history.
+ */
 public class StatsPanel extends JPanel {
     private JButton backButton;
     private JLabel titleLabel;
     private JTextArea area;
+    /**
+     * Constructs the statistics panel that shows player statistics and match history.
+     *
+     * @param frame The parent JFrame to return to the main menu.
+     */
     public StatsPanel(JFrame frame) {
         setLayout(null);
         setBackground(Color.BLACK);
