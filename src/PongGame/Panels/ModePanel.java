@@ -5,7 +5,10 @@ import PongGame.Panels.StatsPanel;
 
 import javax.swing.*;
 import java.awt.*;
-
+/**
+ * The ModePanel class displays the main menu where the user can choose the game mode,
+ * set the win score, or open the shop.
+ */
 public class ModePanel extends JPanel {
     private int winscore=0;
     private boolean twoPlayers;
@@ -21,7 +24,12 @@ public class ModePanel extends JPanel {
     private JButton shopButton;
 
     private JLabel scoreLabel;
-
+    /**
+     * Constructs the ModePanel with UI components for starting the game,
+     * choosing game mode, and accessing the shop.
+     *
+     * @param parentFrame the main application window (JFrame)
+     */
     public ModePanel(JFrame parentFrame) {
         setLayout(null);
         setBackground(Color.BLACK);
@@ -143,6 +151,12 @@ public class ModePanel extends JPanel {
         add(startButton);
         add(statsButton);
     }
+    /**
+     * Highlights the selected button by changing its background color to green.
+     * Also resets the style of all other predefined buttons.
+     *
+     * @param selected the button that has been selected by the user
+     */
     private void highlightSelectedButton(JButton selected) {
         resetButtonStyle(button3);
         resetButtonStyle(button5);
@@ -154,6 +168,11 @@ public class ModePanel extends JPanel {
         selected.setOpaque(true);
         selected.setBackground(Color.GREEN);
     }
+    /**
+     * Resets the style of a given button to its default appearance.
+     *
+     * @param button the button whose style will be reset
+     */
     private void resetButtonStyle(JButton button) {
         button.setContentAreaFilled(true);
         button.setOpaque(true);
