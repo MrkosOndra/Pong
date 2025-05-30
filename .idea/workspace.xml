@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="JavaDocs">
-      <change beforePath="$PROJECT_DIR$/src/PongGame/Entities/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PongGame/Entities/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.BallTest.testReverseYDirection">
+  <component name="RunManager">
     <configuration name="BallTest.testReverseYDirection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pong" />
       <extension name="coverage">
@@ -130,15 +131,7 @@
       <workItem from="1748194885955" duration="174000" />
       <workItem from="1748452999527" duration="10332000" />
       <workItem from="1748538211164" duration="4372000" />
-      <workItem from="1748624908882" duration="1937000" />
-    </task>
-    <task id="LOCAL-00006" summary="pridani timer ktery kazdych 10 milisekund spusti metodu repaint a update a diky tomu se palka hybe">
-      <option name="closed" value="true" />
-      <created>1745755490868</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1745755490868</updated>
+      <workItem from="1748624908882" duration="3956000" />
     </task>
     <task id="LOCAL-00007" summary="vytvoreni tridy Ball.java a metod diky kterym se bude micek pohybovat">
       <option name="closed" value="true" />
@@ -524,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748628621797</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="JavaDocs">
+      <option name="closed" value="true" />
+      <created>1748629017640</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1748629017640</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
