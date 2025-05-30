@@ -2,7 +2,9 @@ package PongGame.Managers;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Manages game statistics such as wins, losses, and coins earned.
+ */
 public class StatsManager {
     private static int player1Wins = 0;
     private static int player2Wins = 0;
@@ -10,7 +12,18 @@ public class StatsManager {
     private static int totalGames = 0;
 
     private static final List<String> matchHistory = new ArrayList<>();
-
+    /**
+     * Records the result of a finished match and updates statistics.
+     *
+     * <p>This method updates the total number of games played and adds
+     * the outcome to the match history. It also increments the win counter
+     * for the appropriate player or AI depending on the match type and result.</p>
+     *
+     * @param twoPlayers   true if the game was played between two human players, false if against AI
+     * @param player1Won   true if player 1 won the game, false otherwise
+     * @param score1       the final score of player 1
+     * @param score2       the final score of player 2 or AI
+     */
     public static void recordMatch(boolean twoPlayers, boolean player1Won, int score1, int score2) {
         totalGames++;
         String result;
@@ -51,13 +64,6 @@ public class StatsManager {
         return matchHistory;
     }
 
-    public static void resetStats() {
-        player1Wins = 0;
-        player2Wins = 0;
-        aiWins = 0;
-        totalGames = 0;
-        matchHistory.clear();
-    }
 }
 
 
