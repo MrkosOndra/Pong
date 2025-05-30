@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="JavaDocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PongGame/Managers/StatsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Managers/StatsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PongGame/Panels/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/GameOverOverlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PongGame/Panels/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,15 +132,7 @@
       <workItem from="1748452999527" duration="10332000" />
       <workItem from="1748538211164" duration="4372000" />
       <workItem from="1748624908882" duration="3956000" />
-      <workItem from="1748631066144" duration="2228000" />
-    </task>
-    <task id="LOCAL-00009" summary="vygenerovani getteru">
-      <option name="closed" value="true" />
-      <created>1745951457915</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1745951457915</updated>
+      <workItem from="1748631066144" duration="3423000" />
     </task>
     <task id="LOCAL-00010" summary="ve tride update udelani odrazu micku od hran a hracovi palky">
       <option name="closed" value="true" />
@@ -527,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748632683175</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="JavaDocs">
+      <option name="closed" value="true" />
+      <created>1748633500079</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1748633500079</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

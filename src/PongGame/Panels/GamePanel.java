@@ -10,7 +10,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
+/**
+ * GamePanel handles the core gameplay of Pong.
+ * It manages game objects like paddles, ball, score, and game loop.
+ */
 public class GamePanel extends JPanel implements KeyListener {
     private Paddle player;
     private Ball ball;
@@ -29,7 +32,13 @@ public class GamePanel extends JPanel implements KeyListener {
     private int direction2 = 0;
     private boolean twoPlayers;
 
-
+    /**
+     * Constructs a new GamePanel instance.
+     *
+     * @param winscore   number of points needed to win the game
+     * @param twoPlayers true if the game mode is Player vs Player, false if vs AI
+     * @param frame      the parent JFrame to allow content switching
+     */
     public GamePanel(int winscore, boolean twoPlayers, JFrame frame) {
         this.winscore = winscore;
         this.setBackground(Color.BLACK);
@@ -78,7 +87,11 @@ public class GamePanel extends JPanel implements KeyListener {
         gameOverOverlay.setBounds(0, 0, screenWidth, screenHeight);
         this.add(gameOverOverlay);
     }
-
+    /**
+     * Paints the game components including paddles, ball, score, and game over message.
+     *
+     * @param g the Graphics context
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -110,7 +123,11 @@ public class GamePanel extends JPanel implements KeyListener {
     public void keyTyped(KeyEvent e) {
 
     }
-
+    /**
+     * Handles key press events to control paddles.
+     *
+     * @param e the key event
+     */
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
@@ -133,7 +150,9 @@ public class GamePanel extends JPanel implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
     }
-
+    /**
+     * Main game update loop. Called regularly by a timer.
+     */
     public void update() {
         if (gameover) return;
 
@@ -144,7 +163,7 @@ public class GamePanel extends JPanel implements KeyListener {
         checkPaddleCollision();
         checkGoal();
     }
-
+    /** Updates the player paddle position based on input. */
     private void updatePlayerMovement() {
         if (direction == -1) {
             player.moveUp();
@@ -153,7 +172,7 @@ public class GamePanel extends JPanel implements KeyListener {
             player.moveDown(screenHeight);
         }
     }
-
+    /** Updates the second paddle: either player-controlled or AI. */
     private void updateSecondPlayerMovementOrAI() {
         if (twoPlayers) {
             if (direction2 == -1) {
@@ -171,17 +190,17 @@ public class GamePanel extends JPanel implements KeyListener {
             }
         }
     }
-
+    /** Moves the ball according to its current velocity. */
     private void updateBallPosition() {
         ball.move();
     }
-
+    /** Reverses the Y direction if ball hits top or bottom wall. */
     private void checkWallCollision() {
         if (ball.getY() <= 10 || ball.getY() + ball.getHeight() >= screenHeight) {
             ball.ReverseYDirection();
         }
     }
-
+    /** Detects and handles ball collisions with paddles. */
     private void checkPaddleCollision() {
         if (ball.getX() < player.getX() + player.getWidth() &&
                 ball.getX() + ball.getWidth() > player.getX() &&
@@ -196,7 +215,9 @@ public class GamePanel extends JPanel implements KeyListener {
             ball.ReverseXDirection();
         }
     }
-
+    /**
+     * Checks if a goal has been scored and updates the score or ends the game.
+     */
     private void checkGoal() {
         if (ball.getX() + ball.getWidth() < 0) {
             scoreBoard.addPointPlayer();
@@ -218,7 +239,9 @@ public class GamePanel extends JPanel implements KeyListener {
             }
         }
     }
-
+    /**
+     * Ends the game, stops timers and displays game over overlay.
+     */
     private void endGame() {
         gameover = true;
         timer.stop();
