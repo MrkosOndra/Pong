@@ -14,8 +14,7 @@ public class StatsManager {
     private static final List<String> matchHistory = new ArrayList<>();
     /**
      * Records the result of a finished match and updates statistics.
-     *
-     * <p>This method updates the total number of games played and adds
+     * This method updates the total number of games played and adds
      * the outcome to the match history. It also increments the win counter
      * for the appropriate player or AI depending on the match type and result.</p>
      *

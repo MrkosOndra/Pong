@@ -5,11 +5,22 @@ import PongGame.Panels.ModePanel;
 
 import javax.swing.*;
 import java.awt.*;
-
+/**
+ * The GameOverOverlay class is responsible for displaying a game over screen
+ * with the final score and winner message.
+ * It draws a semi-transparent overlay over the game panel and shows
+ * relevant information such as who won and the final score.
+ */
 public class GameOverOverlay extends JPanel {
     private JButton restartButton;
     private JButton menuButton;
-
+    /**
+     * Constructs the GameOverOverlay panel.
+     *
+     * @param parentFrame the main JFrame where the game is displayed
+     * @param winscore    the score required to win the game
+     * @param twoPlayers  whether the game mode was two-player or vs AI
+     */
     public GameOverOverlay(JFrame parentFrame, int winscore, boolean twoPlayers) {
         setLayout(null);
         setBackground(new Color(0, 0, 0, 150));
@@ -47,6 +58,9 @@ public class GameOverOverlay extends JPanel {
         add(restartButton);
         add(menuButton);
     }
+    /**
+     * Makes the overlay visible to indicate the game has ended.
+     */
     public void showOverlay() {
         setVisible(true);
     }

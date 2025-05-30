@@ -7,6 +7,7 @@
     <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="JavaDocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PongGame/Managers/StatsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Managers/StatsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PongGame/Panels/GameOverOverlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Panels/GameOverOverlay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,15 +133,7 @@
       <workItem from="1748452999527" duration="10332000" />
       <workItem from="1748538211164" duration="4372000" />
       <workItem from="1748624908882" duration="3956000" />
-      <workItem from="1748631066144" duration="1300000" />
-    </task>
-    <task id="LOCAL-00008" summary="vytvoreni mice a roybohybovani ho">
-      <option name="closed" value="true" />
-      <created>1745760699361</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1745760699361</updated>
+      <workItem from="1748631066144" duration="2228000" />
     </task>
     <task id="LOCAL-00009" summary="vygenerovani getteru">
       <option name="closed" value="true" />
@@ -526,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748631210423</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="JavaDocs">
+      <option name="closed" value="true" />
+      <created>1748632683175</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1748632683175</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
