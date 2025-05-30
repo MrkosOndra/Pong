@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="rozdeleni kodu do Package pro prehlednost">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PongGame/Managers/SkinManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Managers/SkinManager.java" afterDir="false" />
+    <list default="true" id="c91109d4-c802-4804-9235-203967511413" name="Changes" comment="JavaDocs">
+      <change beforePath="$PROJECT_DIR$/src/PongGame/Entities/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PongGame/Entities/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,15 +130,7 @@
       <workItem from="1748194885955" duration="174000" />
       <workItem from="1748452999527" duration="10332000" />
       <workItem from="1748538211164" duration="4372000" />
-      <workItem from="1748624908882" duration="1641000" />
-    </task>
-    <task id="LOCAL-00005" summary="implementace KeyListener a metod diky kterym muzeme pohybovat palkou pomoci W a S take pridani promene direction ktera bude udavat smer pokud 1 tak dolu a -1 nahoru 0 stoji a metoda update ktera aktualizuje jestli se palka vykresluje nahiru nebo dolu">
-      <option name="closed" value="true" />
-      <created>1745754822337</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1745754822338</updated>
+      <workItem from="1748624908882" duration="1937000" />
     </task>
     <task id="LOCAL-00006" summary="pridani timer ktery kazdych 10 milisekund spusti metodu repaint a update a diky tomu se palka hybe">
       <option name="closed" value="true" />
@@ -525,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748539451998</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="JavaDocs">
+      <option name="closed" value="true" />
+      <created>1748628621796</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1748628621797</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pridani tridy GameOverOverlay.java ve ktere jsou Buttony pro hrani znovu a zpatky do menu a taky metoda pro ukazani ktera se vola po ukonceni hry v game panel v metode endgame" />
     <MESSAGE value="zavolani showOverlay v metode endgame a pridani frame ve kterem jsou tlacitka do konstruktoru" />
     <MESSAGE value="Inicializace parentFrame ktere je window coz je frame ve kterem se hraje hra" />
     <MESSAGE value="vytvoreni tridy StatsManager.java kde se ukladaji data o odehranych hrach aby si hrac mohl zobrazit statistiky" />
@@ -558,6 +556,7 @@
     <MESSAGE value="pridani do metody endgame pridavani coinu za vyhru" />
     <MESSAGE value="oprava mensich vizualnich chyb posunuti buttonu a sjednoceni vypisu" />
     <MESSAGE value="rozdeleni kodu do Package pro prehlednost" />
-    <option name="LAST_COMMIT_MESSAGE" value="rozdeleni kodu do Package pro prehlednost" />
+    <MESSAGE value="JavaDocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs" />
   </component>
 </project>
