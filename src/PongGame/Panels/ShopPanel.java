@@ -5,6 +5,9 @@ import PongGame.Managers.SkinManager;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * ShopPanel provides a simple UI where the player can purchase and select paddle and ball colors.
+ */
 public class ShopPanel extends JPanel {
     private JLabel title;
     private JButton backButton;
@@ -18,7 +21,12 @@ public class ShopPanel extends JPanel {
     private JButton blueBtn;
     private JButton greenBtn;
     private JButton back;
-
+    /**
+     * Constructs the shop panel UI, displaying available paddle and ball colors
+     * along with the current coin count.
+     *
+     * @param parentFrame the parent frame to switch back to menu or game
+     */
     public ShopPanel(JFrame parentFrame) {
         setLayout(null);
         setBackground(Color.BLACK);
@@ -113,6 +121,11 @@ public class ShopPanel extends JPanel {
         add(back);
     }
     //chat gpt
+    /**
+     * Handles the logic of selecting or purchasing a paddle color.
+     *
+     * @param color the color the user wants to select or buy
+     */
     private void handleBallColorSelection(Color color, JLabel coinsLabel) {
         if (SkinManager.isBallColorUnlocked(color)) {
             SkinManager.selectBallColor(color);
@@ -127,6 +140,11 @@ public class ShopPanel extends JPanel {
             coinsLabel.setText("Máš " + SkinManager.getCoins() + " coinu");
         }
     }
+    /**
+     * Handles the logic of selecting or purchasing a ball color.
+     *
+     * @param color the color the user wants to select or buy
+     */
     private void handlePaddleColorSelection(Color color, JLabel coinsLabel) {
         if (SkinManager.isPaddleColorUnlocked(color)) {
             SkinManager.purchasePaddleColor(color);
